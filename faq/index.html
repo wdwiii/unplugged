@@ -1,9 +1,47 @@
+<!--
+~~~~~ Page Breakdown ~~~~~
+
+- Header
+    - Logo
+    - Navigation bar
+        - About
+        - FAQ
+     - Headline
+     - Image
+
+- Content Area
+    - Newsletter signup
+        - Headline text
+        - Paragraph text
+        - Headline text
+        - Email field
+        - Submit button
+    - Info about Unplugged
+        - Headline text
+        - Background Image
+        - Icons
+        - Text
+    - Previous retreats
+        - Headline text
+        - Paragraph text
+        - Image
+
+- Footer
+     - Contact
+         - Headline text
+         - Contact info
+     - Social Media
+         - Headline text
+         - Social icons
+     - Copyright
+ -->
+
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Unplugged | FAQ </title>
+  <title>Unplugged | Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,19 +54,52 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="flexbox">
+    <header>
+        <div class="full-width flexbox">
+            <div class="header-half flexbox">
+                <img src="img/unpluggedlogo.png" alt="unplugged logo" class="header-logo">
+            </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
+            <div class="header-half flexbox nav-border">
+                <nav class="flexbox">
+                    <ul class="flexbox">
+                        <li><a href="#">faq</a></li>
+                        <li><a href="#">about</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <footer class="flexbox">
+        <div class="contact-footer flexbox">
+            <h3>Contact</h3>
+            <p>555-555-5555<br> hello@unplugged.com</p>
+        </div>
+        <div class="social flexbox">
+            <h3>Social</h3>
+            <img src="img/facebook.png" alt="Facebook">
+            <img src="img/twitter.png" alt="Twitter">
+            <img src="img/instagram.png" alt="Instagram">
+        </div>
+        <div class="copyright">
+            <p>Copyright 2019 | Unplugged</p>
+        </div>
+    </footer>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
