@@ -37,7 +37,7 @@
  -->
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
@@ -58,88 +58,63 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
 
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="flexbox">
+<body>
     <header>
-        <div class="full-width flexbox">
-            <div class="header-half flexbox">
-                <img src="img/unpluggedlogo.png" alt="unplugged logo" class="header-logo">
-            </div>
-
-            <div class="header-half flexbox nav-border">
-                <nav class="flexbox">
-                    <ul class="flexbox">
-                        <li><a href="#">faq</a></li>
-                        <li><a href="#">about</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="content-wrapper">
+            <a href="index.html"><img src="" alt="unplugged logo"></a>
+            <div class="header-divider"></div>
+            <nav>
+                <ul>
+                    <li><a href="about/index.html">about</a></li>
+                    <li><a href="faq/index.html">faq</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="flexbox">
-        <section class="hero-area-wrapper">
-            <div class="full-width hero-area">
-                <h1>Retreat from the desk, return refreshed.</h1>
-            </div>
+    <main>
+        <section class="hero-section">
+            <h1>Retreat from the desk, return refreshed.</h1>
         </section>
-
-        <section class="join-retreat-wrapper">
-            <div class="join-retreat">
-                <h3>Want to join the next retreat?</h3>
-                <p>Find out when we are holding our next retreat and how your company or team can sign up</p>
-                <h3>Find out more</h3>
+        <aside>
+            <div class="signup-form">
+                <input type="text" name="name" value="email address">
+                <input type="text" name="button" value="Download Itinerary">
             </div>
-        </section>
-
-        <section class="ammenities-wrapper">
-            <div class="ammenities">
-                <h2>Have the work week you always dreamed of — without the bad wifi. </h2>
-                <img src="img/campground.png" alt="campground">
-                <p>Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
-                <img src="img/bed.png" alt="bed">
-                <p>12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
-                <img src="img/utensils.png" alt="bed">
-                <p>Private chef team providing on demand meals - just like your team kitchen.</p>
-                <img src="img/shoe-prints.png" alt="shoe prints">
-                <p>5 outdoor obstacle courses, including private beach ½ mile from bungalow.</p>
-                <img src="img/smile.png" alt="smile">
-                <p>Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
-                <img src="img/wifi.png" alt="img/wifi.png">
-                <p>Dedicated computer room for times that you must wifi.</p>
-            </div>
-        </section>
-
-        <section class="previous-retreats-wrapper flexbox">
-            <div class="previous-retreats">
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
-        </section>
-
-        <footer class="flexbox">
-            <div class="contact-footer flexbox">
-                <h3>Contact</h3>
-                <p>555-555-5555<br> hello@unplugged.com</p>
-            </div>
-            <div class="social flexbox">
-                <h3>Social</h3>
-                <img src="img/facebook.png" alt="Facebook">
-                <img src="img/twitter.png" alt="Twitter">
-                <img src="img/instagram.png" alt="Instagram">
-            </div>
-            <div class="copyright">
-                <p>Copyright 2019 | Unplugged</p>
-            </div>
-        </footer>
+        </aside>
     </main>
+    <footer>
+        <div class="content-wrapper">
+            <div class="footer-content">
+                <div class="contact">
+                    <h3>contact</h3>
+                    <address>
+                    555-555-5555<br>hello@unplugged.com
+                    </address>
+                </div>
+                <div class="social">
+                    <h3>social</h3>
+                    <div class="social-icons">
+                        <p>https://www.facebook.com/</p>
+                        <p>https://twitter.com</p>
+                        <p>https://www.instagram.com/</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2019  |  Unplugged</p>
+        </div>
+    </footer>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
