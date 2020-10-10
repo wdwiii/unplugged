@@ -10,22 +10,19 @@
      - Image
 
 - Content Area
-    - Newsletter signup
-        - Headline text
+    - Mission
         - Paragraph text
-        - Headline text
-        - Email field
-        - Submit button
-    - Info about Unplugged
-        - Headline text
-        - Background Image
-        - Icons
-        - Text
-    - Previous retreats
-        - Headline text
         - Paragraph text
-        - Image
-
+    - Map
+        - iFrame
+    - Contact Us
+        - Headline text
+        - Address
+            - Headline text
+            - Paragraph text
+        - Address
+            - Headline text
+            - Paragraph text
 - Footer
      - Contact
          - Headline text
@@ -34,113 +31,140 @@
          - Headline text
          - Social icons
      - Copyright
+
+     ~~~~~~~~~~~~~~ Class Glossary ~~~~~~~~~~~~~~~
+     content-wrapper (any elements that contain other content and visuals)
+
+     header-divider (the space in between the logo and navigation)
+
+     mission (the section that contains the mission and paragraphs in first section)
+
+     map-section (the container of the embedded google map)
+
+     contact-section (the section above footer that contains contact numbers and mailing addresses)
+
+     contact-content (contains the headline text and content-wrapper divs)
+
+     contact-wrapper (contains address information within the contact-section)
+
+     footer-content (the div that holds your address info)
+
+     contact (the contact address in the footer)
+
+     social (the social media div in the footer)
+
+     social-icons (the div that holds our social media icons)
+
+     copyright (the copyright div in the footer)
  -->
 
 <!doctype html>
 <html class="no-js" lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Unplugged | FAQ</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+      <meta charset="utf-8">
+      <title>Unplugged | FAQ</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+      <meta property="og:title" content="">
+      <meta property="og:type" content="">
+      <meta property="og:url" content="">
+      <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+      <link rel="manifest" href="site.webmanifest">
+      <link rel="apple-touch-icon" href="icon.png">
+      <!-- Place favicon.ico in the root directory -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
 
 
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<header>
-    <div class="content-wrapper">
-        <a href="index.html"><img src="" alt="unplugged logo"></a>
-        <div class="header-divider"></div>
-        <nav>
-            <ul>
-                <li><a href="faq/index.html" target="_blank">FAQ</a></li>
-                <li><a href="about/index.html" target="_blank">about</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <section class="mission">
-        <div class="content-wrapper">
-            <div class="mission-content">
-                <h1>Our Mission - we want to make you the team you always wanted to be.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+      <meta name="theme-color" content="#fafafa">
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <a href="index.html"><img src="" alt="unplugged logo"></a>
+                <div class="header-divider"></div>
+                <nav>
+                    <ul>
+                        <li><a href="faq/index.html" target="_blank">FAQ</a></li>
+                        <li><a href="about/index.html" target="_blank">about</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section class="map">
-        <div class="content-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94010.02857237725!2d-88.496468447407!3d42.58048312574231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880584e9f85c4509%3A0x9eb9a6efc12afe43!2sLake%20Geneva%2C%20WI%2053147!5e0!3m2!1sen!2sus!4v1602039973977!5m2!1sen!2sus" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <div class="content-wrapper">
-            <div class="contact-content">
-                <h2>Contact us, because you all need this.</h2>
-                <div class="contact-wrapper">
-                    <h3>General Infomation</h3>
-                    <address>
-                        <p>333 Main St, Lake Geneva, WI 53147<br>
-                        555-555-5555
-                        <br>hello@unplugged.com</p>
-                    </address>
+        <main>
+            <section class="mission">
+                <div class="content-wrapper">
+                    <div class="mission-content">
+                        <h1>Our Mission - we want to make you the team you always wanted to be.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
                 </div>
+            </section>
 
-
-                <div class="contact-wrapper">
-                    <h3>Chat with a Friend</h3>
-                    <address>
-                        <p>555-555-5556<br>
-                        facilitator@unplugged.com</p>
-                    </address>
+            <section class="map-section">
+                <div class="content-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94010.02857237725!2d-88.496468447407!3d42.58048312574231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880584e9f85c4509%3A0x9eb9a6efc12afe43!2sLake%20Geneva%2C%20WI%2053147!5e0!3m2!1sen!2sus!4v1602039973977!5m2!1sen!2sus" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-            </div>
-        </div>
-    </secction>
+            </section>
 
-    <footer>
-        <div class="content-wrapper">
-            <div class="footer-content">
-                <div class="contact">
-                    <h2>contact</h2>
-                    <address>
-                    555-555-5555<br>
-                    hello@unplugged.com
-                    </address>
+            <section class="contact-section">
+                <div class="content-wrapper">
+                    <div class="contact-content">
+                        <h2>Contact us, because you all need this.</h2>
+                        <div class="contact-wrapper">
+                            <h3>General Infomation</h3>
+                            <address>
+                                <p>333 Main St, Lake Geneva, WI 53147<br>
+                                555-555-5555
+                                <br>hello@unplugged.com</p>
+                            </address>
+                        </div>
+
+
+                        <div class="contact-wrapper">
+                            <h3>Chat with a Friend</h3>
+                            <address>
+                                <p>555-555-5556<br>
+                                facilitator@unplugged.com</p>
+                            </address>
+                        </div>
+                    </div>
                 </div>
-                <div class="social">
-                    <h2>social</h2>
-                    <div class="social-icons">
-                        <p>https://www.facebook.com/</p>
-                        <p>https://twitter.com</p>
-                        <p>https://www.instagram.com/</p>
+            </secction>
+        </main>
+
+        <footer>
+            <div class="content-wrapper">
+                <div class="footer-content">
+                    <div class="contact">
+                        <h2>contact</h2>
+                        <address>
+                        555-555-5555<br>
+                        hello@unplugged.com
+                        </address>
+                    </div>
+                    <div class="social">
+                        <h2>social</h2>
+                        <div class="social-icons">
+                            <p>https://www.facebook.com/</p>
+                            <p>https://twitter.com</p>
+                            <p>https://www.instagram.com/</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright 2019  |  Unplugged</p>
-        </div>
-    </footer>
+            <div class="copyright">
+                <p>Copyright 2019  |  Unplugged</p>
+            </div>
+        </footer>
+    </body>
 
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
