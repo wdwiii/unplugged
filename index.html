@@ -34,6 +34,35 @@
          - Headline text
          - Social icons
      - Copyright
+
+~~~~~~~~~~~~~~ Class Glossary ~~~~~~~~~~~~~~~
+content-wrapper (any elements that contain other content and visuals)
+
+header-divider (the space in between the logo and navigation)
+
+hero-area (the container of the top image)
+
+form-description (the block of text on top of the newsletter signup form)
+
+form (the newsletter signup form)
+
+features (the section that contains the features and icons in the middle of the page)
+
+features-items (contains the retreat features and icons)
+
+features-item-description (the individual descriptions for each icon)
+
+reviews (the section that contains reviews of previous events, right above the footer)
+
+footer-content (the div that holds your address info)
+
+contact (the contact address in the footer)
+
+social (the social media div in the footer)
+
+social-icons (the div that holds our social media icons)
+
+copyright (the copyright div in the footer)
  -->
 
 <!doctype html>
@@ -69,35 +98,80 @@
             <div class="header-divider"></div>
             <nav>
                 <ul>
+                    <li><a href="faq/index.html">FAQ</a></li>
                     <li><a href="about/index.html">about</a></li>
-                    <li><a href="faq/index.html">faq</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero-section">
+        <section class="hero-area">
             <h1>Retreat from the desk, return refreshed.</h1>
         </section>
+
         <aside>
             <div class="signup-form">
-                <input type="text" name="name" value="email address">
+                <h3>Want to join the next retreat?</h3>
+                <p class="form-description">Find out when we are holding our next retreat and how your company or team can sign up!</p>
+                <h3>Find out more</h3>
+                <input type="text" name="name" value="email address" class="form">
                 <input type="text" name="button" value="Download Itinerary">
             </div>
         </aside>
+
+        <secton class="features">
+            <div class="content-wrapper">
+                <h1>Have the work week you always dreamed of — without the bad wifi. </h1>
+                <article class="features-items">
+                    <p class="fontawesome-icon"></p>
+                    <p class="features-item-description">Located in a peaceful bungalow outside of Lake Geneva, Wisconsin</p>
+                </article>
+                <article class="features-items">
+                    <p class="fontawesome-icon"></p>
+                    <p class="features-item-description">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
+                </article>
+                <article class="features-items">
+                    <p class="fontawesome-icon"></p>
+                    <p class="features-item-description">Private chef team providing on demand meals - just like your team kitchen.</p>
+                </article>
+                <article class="features-items">
+                    <p class="fontawesome-icon"></p>
+                    <p class="features-item-description">5 outdoor obstacle courses, including private beach ½ mile from bungalow.</p>
+                </article>
+                <article class="features-items">
+                    <p class="fontawesome-icon"></p>
+                    <p class="features-item-description">Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
+                </article>
+                <article class="features-items">
+                    <p class="fontawesome-icon"></p>
+                    <p class="features-item-description">Dedicated computer room for times that you must wifi.</p>
+                </article>
+            </div>
+        </secton>
+
+        <section class="reviews">
+            <div class="content-wrapper">
+                <h2>Be a better team in 5 days, like these.</h2>
+                <img src="" alt="">
+                <span><p>LaCrue Bottling Co. October 2017 </p></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </p>
+            </div>
+
+        </section>
+
     </main>
     <footer>
         <div class="content-wrapper">
             <div class="footer-content">
                 <div class="contact">
-                    <h3>contact</h3>
+                    <h2>contact</h2>
                     <address>
                     555-555-5555<br>hello@unplugged.com
                     </address>
                 </div>
                 <div class="social">
-                    <h3>social</h3>
+                    <h2>social</h2>
                     <div class="social-icons">
                         <p>https://www.facebook.com/</p>
                         <p>https://twitter.com</p>
