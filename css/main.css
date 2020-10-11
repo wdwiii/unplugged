@@ -7,6 +7,10 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+/* Search (command+f) to skip to author styles:
+~~~~~~~ Stylesheet for Unplugged Retreat ~~~~~~
+*/
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -86,6 +90,331 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /* Stylesheet for Unplugged Retreat */
+
+   /*
+   ~~~~~~~~~~ Color Palette ~~~~~~~~~~
+
+   #E2E3ED: Text Color
+   #202322: Header & Footer Background
+   #3A3A3A: Header Border
+   #527158: Section.Mission Background & Footer Buttons
+   #2A423A: Section.Contact Background
+
+
+   ~~~~~~~~~~ Fonts ~~~~~~~~~~
+
+   OpenSans: All paragraphs
+   OpenSans-Bold: Nav
+   .....
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400, 700
+
+   Poppins-Medium: Used for H1, H2 & H3
+   .....
+   font-family: 'Poppins', sans-serif;
+
+
+   ==================
+   Table of Contents
+   ==================
+
+   - Base Styles
+       - Layout
+       - Header
+       - Footer
+
+   - Pages
+       - Homepage (Main)
+           - Hero
+           - Signup form
+           - Features
+           - Reviews
+
+       - About
+           - Mission
+           - Map
+           - Contact
+
+       - FAQ
+           -FAQ
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ============= Base Styles =============
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+html {
+    height: 100%;
+}
+
+body {
+   color: /*#E2E3ED;*/;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   height: 100%;
+}
+
+/*~~~~~~~~~~~~ Layout ~~~~~~~~~~~~*/
+header,
+footer {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-basis: 90%;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column wrap;
+}
+
+
+/*~~~~~~~~~~~~ Header ~~~~~~~~~~~~*/
+header div.content-wrapper{
+    flex-flow: column wrap;
+}
+
+header a img{
+
+}
+
+.header-divider {
+
+}
+
+nav {
+
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+nav a {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.125em;
+   font-weight: 700;
+   margin: 30px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+/* unvisited link */
+nav a:link {
+   color: #E2E3ED;
+}
+/* visited link */
+nav a:visited {
+   color: #E2E3ED;
+}
+/* mouse over link */
+nav a:hover {
+   color: #527158;
+}
+/* selected link */
+nav a:active {
+   color: #2A423A;
+}
+
+
+/*~~~~~~~~~~~~ Footer ~~~~~~~~~~~~*/
+footer,
+footer .contact-wrapper,
+.footer-content,
+.contact {
+    flex-flow: column wrap;
+}
+
+.footer .contact-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+address {
+    text-align: center;
+}
+
+.social {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.copyright {
+
+}
+
+/*=======================
+        Homepage
+========================
+
+/*~~~~~~~~~~~~ Hero ~~~~~~~~~~~~*/
+
+h1 {
+    width: 90%;
+}
+
+/*~~~~~~~~~~~~ Signup Form ~~~~~~~~~~~~*/
+aside {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 90%;
+}
+
+.signup-form input {
+    justify-content: center;
+}
+
+.form-description {
+
+}
+
+/*~~~~~~~~~~~~ Features ~~~~~~~~~~~~*/
+
+.features div.content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-basis: 90%;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+article {
+    align-items: center;
+    display: flex;
+}
+
+.features article {
+    width: 200px;
+
+}
+
+.fontawesome-icon {
+
+}
+
+.features-item-description {
+
+}
+
+/*~~~~~~~~~~~~ Reviews ~~~~~~~~~~~~*/
+
+.reviews {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews h2 {
+
+}
+
+.reviews img {
+    flex-basis: 100%
+}
+
+.reviews span {
+
+}
+
+/*=======================
+         About
+========================
+
+
+/*~~~~~~~~~~~~ Section - Mission ~~~~~~~~~~~~*/
+.mission p {
+    width: 90%;
+}
+
+.mission div.content-wrapper {
+    flex-flow: column wrap;
+}
+
+/*~~~~~~~~~~~~ Section - Map ~~~~~~~~~~~~*/
+
+.map-section .content-wrapper {
+    flex-basis: 100%;
+}
+
+iframe {
+    display: flex;
+    flex-basis: 100%;
+}
+/*~~~~~~~~~~~~ Section - Contact ~~~~~~~~~~~~*/
+.contact-content {
+    align-items: flex-start;
+    display: flex;
+    flex-basis: 90%;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+address {
+    text-align: left;
+}
+
+/*=======================
+         FAQ
+========================
+
+
+/*~~~~~~~~~~~~ FAQ ~~~~~~~~~~~~*/
+
+.faq-content {
+    align-items: flex-start;
+    display: flex;
+    flex-basis: 90%;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+article.faq-items {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.faq-items h3{
+    text-align: left;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +589,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
