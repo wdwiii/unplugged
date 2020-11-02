@@ -217,11 +217,11 @@ p {
 }
 
 img {
-
+    width: 100%;
 }
 
 figure {
-
+    margin: 0;
 }
 
 
@@ -252,10 +252,13 @@ header a {
     text-align: center;
 }
 
-header a img {
+header figure {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     padding: 15px 0;
     width: 60%;
-    max-width: 320.5px;
 }
 
 .header-divider {
@@ -343,7 +346,7 @@ footer .copyright {
 }
 
 /*******************
-~~ MOBILE STYLES ~~
+~~ MOBILE FIRST STYLES ~~
 *******************/
 
 /*=======================
@@ -353,18 +356,18 @@ footer .copyright {
 /*~~~~~~~~~~~~ Hero ~~~~~~~~~~~~*/
 .hero-area {
     align-items: flex-start;
-    background: #2A423A /* url("../img/jake-melara-30679-unsplash.png")
-    no-repeat;
-    background-position: center;
-    background-size: cover; */;
-
+    background: url("../img/jake-melara-30679-unsplash.png") center
+    no-repeat #2A423A;
+    background-size: cover;
     display: flex;
+    flex-flow: row wrap;
     height: 500px;
 }
 
 .hero-area h1 {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-size: 2.5em;
-    font-weight: normal;
+    font-weight: 400;
     padding-top: 50px;
 }
 
@@ -482,7 +485,7 @@ p.features-item-description {
 }
 
 .reviews h2 {
-
+    margin-bottom: 30px;
 }
 
 .reviews p {
@@ -490,8 +493,7 @@ p.features-item-description {
     padding:
 }
 
-.reviews img {
-    padding-top: 30px;
+.reviews figure {
     width: 100%;
 }
 
@@ -499,6 +501,36 @@ p.features-item-description {
     font-size: 1.05em;
     display: block;
     padding: 20px 0;
+}
+
+/*=======================
+         FAQ
+========================
+
+
+/*~~~~~~~~~~~~ FAQ ~~~~~~~~~~~~*/
+section.faq {
+    background: #527158;
+}
+
+.faq-content {
+    padding: 50px 0;
+}
+
+.faq-content h1 {
+    line-height: 30px;
+    font-weight: normal;
+    margin: 0;
+    width: 100%;
+}
+
+article.faq-items {
+    padding: 50px 15px 0;
+    box-sizing: border-box;
+}
+
+.faq-items h3{
+    padding-bottom: 15px;
 }
 
 /*=======================
@@ -571,35 +603,6 @@ iframe {
 
 }
 
-/*=======================
-         FAQ
-========================
-
-
-/*~~~~~~~~~~~~ FAQ ~~~~~~~~~~~~*/
-section.faq {
-    background: #527158;
-}
-
-.faq-content {
-    padding: 50px 0;
-}
-
-.faq-content h1 {
-    line-height: 30px;
-    font-weight: normal;
-    margin: 0;
-    width: 100%;
-}
-
-article.faq-items {
-    padding: 50px 15px 0;
-    box-sizing: border-box;
-}
-
-.faq-items h3{
-    padding-bottom: 15px;
-}
 
  ==========================================================================
    Helper classes
@@ -687,16 +690,13 @@ article.faq-items {
  Media Queries for Responsive Design.
    ========================================================================== */
 
+   /*******************
+   ~~ TABLET STYLES ~~
+   *******************/
    @media only screen and (min-width: 768px){
-        /* Tablet styles here */
 
+/*~~~~~~~~~~~~ Base Header & Footer Styles ~~~~~~~~~~~~*/
 
-        /*~~ Base Styles ~~*/
-        .content-wrapper {
-
-        }
-
-        /*~~ Header ~~*/
        header {
            justify-content: center;
        }
@@ -711,6 +711,10 @@ article.faq-items {
             flex-wrap: nowrap;
             justify-content: space-between;
             width: 90%;
+        }
+
+        header figure {
+            width: 25%;
         }
 
        nav ul {
@@ -753,7 +757,7 @@ article.faq-items {
 
 /* ================
 ~ Hompepage ~
-================ *
+================ */
         /* Hero Area */
         .hero-area {
             height: 600px;
@@ -768,6 +772,10 @@ article.faq-items {
            justify-content: space-around;
            padding: 50px 0;
        }
+
+        aside h3 {
+            font-size: 1.5em;
+        }
 
         div.form-description,
         div.form {
@@ -788,7 +796,7 @@ article.faq-items {
            padding: 5px 0;
        }
 
-        /* Features Section */
+/*~~~~~~~~~~~~ Features ~~~~~~~~~~~~*/
         .features-item {
             display: flex;
             flex-flow: row wrap;
@@ -801,30 +809,39 @@ article.faq-items {
            width: 40%;
        }
 
-        /* Reviews Secion */
+/*~~~~~~~~~~~~ Reviews ~~~~~~~~~~~~*/
         .reviews .content-wrapper {
             align-items: flex-start;
+            justify-content: space-between;
         }
 
         .reviews h2 {
             margin-bottom: 10px;
-            width: 100%;
+            width: 80%;
+            font-size: 2.2em;
         }
 
-        .reviews img {
-            margin: 0 15px 0 0;
+        .reviews figure {
             padding: 0;
+            width: 50%;
         }
 
-        .reviews img,
         .reviews-content {
-            width: 48%;
-            }
+            padding: 0 15px;
+            width: 45%;
+        }
+
+        .reviews p {
+            font-size: 1em;
+        }
 
         .reviews span {
+            font-size: 1.2em;
             margin: 0;
             padding: 0 0 15px 0;
         }
+
+
 
 
 /* ================
@@ -841,13 +858,16 @@ article.faq-items {
 .faq-content {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.faq-items {
-    width: 50%;
+article.faq-items {
+    padding: 50px 0 0 0;
+    width: 45%;
 }
 
 .faq h3 {
+    font-size: 1em;
     margin: 0;
 }
 
@@ -894,12 +914,48 @@ article.faq-items {
          }
 }
 
+/*******************
+~~ DESKTOP STYLES ~~
+*******************/
+
 @media only screen and (min-width: 1200px) {
-   /*Desktop styles here*/
 
+   .content-wrapper {
+       width: 80%;
+   }
 
-    .content-wrapper {
-        width: 80%;
+/*~~~~~~~~~~~~ Base Header & Footer Styles ~~~~~~~~~~~~*/
+
+    footer h3 {
+        font-size: 1.4em;
+    }
+
+    .contact,
+    .social {
+        width: 35%;
+    }
+
+    /* ================
+    ~ Hompepage ~
+    ================ */
+
+/*~~~~~~~~~~~~ Hero Area ~~~~~~~~~~~~*/
+    .hero-area h1 {
+        font-size: 3.6em;
+        font-weight: 400;
+        width: 85%;
+    }
+
+/*~~~~~~~~~~~~ Newsletter Signup ~~~~~~~~~~~~*/
+    div.form-description,
+    div.form {
+       width: 33%;
+   }
+
+/*~~~~~~~~~~~~ Features ~~~~~~~~~~~~*/
+    .features h2 {
+        font-size: 2em;
+        padding: 30px 0;
     }
 
    .features article {
@@ -908,6 +964,35 @@ article.faq-items {
        width: 30%;
    }
 
+    .features article p {
+        font-size: 1.07em;
+    }
+/*~~~~~~~~~~~~ Reviews ~~~~~~~~~~~~*/
+    .reviews h2 {
+        font-size: 2.2em;
+        margin-bottom: 50px;
+    }
+
+    .reviews p {
+        font-size: 1.2em;
+    }
+
+    .reviews span {
+        font-size: 1.5em;
+    }
+
+
+/* ================
+~ FAQ ~
+================ */
+
+   /* NO ADDITIONAL STYLES */
+
+/* ================
+~ About ~
+================ */
+
+/*~~~~~~~~~~~~ Section - Mission ~~~~~~~~~~~~*/
    .mission h1{
        font-size: 2.5em;
        font-weight: normal;
@@ -918,12 +1003,7 @@ article.faq-items {
        padding-top: 15px;
    }
 
-
-   .contact,
-   .social {
-       width: 35%;
-   }
-
+/*~~~~~~~~~~~~ Section - Contact ~~~~~~~~~~~~*/
    .contact-content h2 {
        padding: 0;
        font-size: 2.5em;
@@ -933,12 +1013,8 @@ article.faq-items {
     .contact-section h3 {
         font-size: 1.6em;
     }
-
-    footer h3 {
-        font-size: 1.4em;
-    }
-
 }
+
 
   /* ==========================================================================
    Print styles.
