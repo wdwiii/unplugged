@@ -366,7 +366,7 @@ footer .copyright {
 
 .hero-area h1 {
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 400;
     padding-top: 50px;
 }
@@ -434,7 +434,11 @@ input[type=button] {
 
 /*~~~~~~~~~~~~ Features ~~~~~~~~~~~~*/
 section.features {
-    background: #202322;
+    background-color: #202322;
+    background-image: url('../img/rawpixel-800820-unsplash1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .features .content-wrapper {
@@ -563,15 +567,21 @@ article.faq-items {
 
 /*~~~~~~~~~~~~ Section - Map ~~~~~~~~~~~~*/
 
-.map-section .content-wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 110%;
 
+
+.map-section figure {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 125%;
+    position: relative;
+    width: 100%;
 }
 
 iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
 
 }
