@@ -902,9 +902,14 @@ article.faq-items {
             padding: 95px 0;
         }
 
+/*~~~~~~~~~~~~ Section - Map ~~~~~~~~~~~~*/
+        .map-section figure {
+            padding-bottom: 50%;
+        }
+
 /*~~~~~~~~~~~~ Section - Contact ~~~~~~~~~~~~*/
 
-        .contact-section {
+        div.contact-section {
         padding: 95px 0;
         }
 
@@ -1012,6 +1017,11 @@ article.faq-items {
        font-size: 1.15em;
        padding-top: 15px;
    }
+
+   /*~~~~~~~~~~~~ Section - Map ~~~~~~~~~~~~*/
+           .map-section figure {
+               padding-bottom: 40%;
+
 
 /*~~~~~~~~~~~~ Section - Contact ~~~~~~~~~~~~*/
    .contact-content h2 {
