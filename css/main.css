@@ -334,6 +334,10 @@ footer .social-icons {
     justify-content: space-around;
 }
 
+footer i {
+    font-size: 1.5em;
+}
+
 .contact,
 .social {
     padding-bottom: 50px;
@@ -464,12 +468,12 @@ section.features {
 }
 
 
-.fontawesome-icon {
-
+.features i {
+    font-size: 3.75em;
+    padding-bottom: 40px
 }
 
 p.features-item-description {
-    padding-top: 40px;
     text-align: center;
     width: 65%;
     font-size: .8em;
@@ -811,6 +815,11 @@ iframe {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
+        }
+
+        .feature-items-description{
+            font-size: 1em;
+            width: 61%;
         }
 
        .features article {
