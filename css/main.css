@@ -197,8 +197,6 @@ ol {
 a {
     color: #E2E3ED;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 h2 {
@@ -249,6 +247,8 @@ header .content-wrapper{
 }
 
 header a {
+    text-transform: uppercase;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -283,19 +283,20 @@ nav li {
 }
 
  /* unvisited link */
-nav a:link {
+a:link {
    color: #E2E3ED;
 }
 /* visited link */
-nav a:visited {
+a:visited {
    color: #E2E3ED;
 }
 /* mouse over link */
-nav a:hover {
+a:hover {
    color: #527158;
+   font-weight: 700;
 }
 /* selected link */
-nav a:active {
+a:active {
    color: #2A423A;
 }
 
@@ -338,7 +339,7 @@ footer i {
     font-size: 1.2em;
 }
 
-footer a {
+footer .social a {
     background-color: #527158;
     border-radius: 50%;
     height: 40px;
@@ -347,14 +348,13 @@ footer a {
     width: 40px;
 }
 
-
 .contact,
 .social {
     padding-bottom: 50px;
 }
 
 footer .copyright {
-    font-size: .75em;
+    font-size: .85em;
     text-align: center;
     width: 100%;
 }
@@ -411,7 +411,6 @@ aside h3 {
 
 .form input {
     box-sizing: border-box;
-    padding: 15px 0;
     height: 55px;
     margin-top: 15px;
     width: 100%;
@@ -429,7 +428,6 @@ input[type=text] {
 
 input[type=button] {
   width: 100%;
-  padding: 20px 0;
   margin-top: 20px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -819,7 +817,10 @@ iframe {
        .form input {
            height: 40px;
            margin-top: 20px;
-           padding: 5px 0;
+       }
+
+       input[text] {
+           padding: 15px;
        }
 
 /*~~~~~~~~~~~~ Features ~~~~~~~~~~~~*/
