@@ -335,8 +335,18 @@ footer .social-icons {
 }
 
 footer i {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
+
+footer a {
+    background-color: #527158;
+    border-radius: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
 
 .contact,
 .social {
@@ -766,6 +776,8 @@ iframe {
            padding-bottom: 22px;
            font-size: 1.2em;
        }
+
+
 
 
 
